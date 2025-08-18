@@ -40,4 +40,20 @@ fn main() {
     /*
         Important Note: non copyable types cannot be moved out of the vector by indexing (such as string cannot be moved by using v[0], it must be referenced as &v[0]).
      */
+
+    // using enums to store elements of different types in a vector
+    enum SpreadsheetCell {
+        Int(i32),
+        Float(f64),
+        Text(String),
+    }
+
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+
+    // we can match here to use this vector 
+
 }
