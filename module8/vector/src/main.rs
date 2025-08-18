@@ -4,7 +4,8 @@ fn main() {
     let mut v: Vec<i32> = Vec::new();
     v.push(32);
     println!("{:#?}",v);
-
+    // we can shadow the vector to delete it's mutability now but it's a overkill
+    
     let v2 = vec![1,2,3];
     println!("{:#?}",v2);
 
